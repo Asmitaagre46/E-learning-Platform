@@ -1,0 +1,16 @@
+<head><link rel="stylesheet" href="style.css" /></head>
+<body>
+    <header>
+      <h1>My Dashboard</h1>
+    </header>
+  
+    <main>
+      <p>HTML Course: <span id="htmlProgress">Not Started</span></p>
+    </main>
+  
+    <script>
+      const isCompleted = localStorage.getItem('htmlCourseCompleted');
+      document.getElementById('htmlProgress').textContent = isCompleted ? "Completed ✅" : "Not Started ❌";
+    </script>
+  </body>
+  
